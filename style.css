@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Figtree;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+}
+main {
+    height: 100%;
+    width: 100%;
+    background-color: hsl(47, 88%, 63%);
+}
+#card {
+    width: 25%;
+    height: 65%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1.5px solid black;
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5vw 1.5vw;
+    box-shadow: 10px 10px hsl(0, 0%, 7%);
+}
+#content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#content button {
+    width: fit-content;
+    background-color: hsl(47, 88%, 63%);
+    color: black;
+    padding: 05px 15px;
+    border-radius: 06px;
+    border: none;
+    font-weight: 800;
+    font-size: 0.8vw;
+}
+#content h5 {
+    font-size: 0.8vw;
+    font-weight: 500;
+}
+#content h1 {
+    font-size: 1.5vw;
+    font-weight: 800;
+}
+#content p {
+    font-size: 1vw;
+    color: #666;
+}
+#content>img {
+    width: 100%;
+    border-radius: 12px;
+}
+#img {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5vw;
+}
+#img img {
+    height: 2vw;
+    width: 2vw;
+}
+@media (max-width:600px) {
+    #card {
+    width: 80%;
+    height: 50%;
+    padding: 4vw 4vw;
+    box-shadow: 08px 08px hsl(0, 0%, 7%);
+}
+#content button {
+    font-size: 2.5vw;
+}
+#content h5 {
+    font-size: 3vw;
+}
+#content h1 {
+    font-size: 5vw;
+    letter-spacing: -1px;
+}
+#content p {
+    font-size: 3.5vw;
+}
+#content>img {
+    width: 100%;
+}
+#img {
+    column-gap: 2.5vw;
+}
+#img img {
+    height: 6vw;
+    width: 6vw;
+}
+#img h4 {
+    font-size: 3.5vw;
+}
+}
